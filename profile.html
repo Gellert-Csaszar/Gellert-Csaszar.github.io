@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>My profile</title>
+    <title>Profile</title>
   </head>
   <body>
     <header class="section-header">
@@ -39,20 +39,30 @@
     </header>
     <div class="container flex martop-header-height medium-gap">
       <main class="section-main">
-        <article>
-          <section>
-            <h1>Personal information</h1>
-            <p>My name is Gellért Császár.</p>
-            <p>I am 21 years old.</p>
-          </section>
-          <section>
-            <h1>Extra-curricular activites</h1>
-            <p>
-              Due to work, I do not have a lot of free time therefore when I do
-              I usually just relax.
-            </p>
-          </section>
-        </article>
+        <div class="image-container">
+          <img
+            src="./images/profile.jpg"
+            alt="Profile picture."
+            class="image"
+          />
+        </div>
+        <section class="information">
+          <h2 class="information__heading">Personal information:</h2>
+          <ul class="information__list">
+            <li class="information__item">Origin: Hungary</li>
+            <li class="information__item">Name: Gellért Császár</li>
+            <li class="information__item">Age: 21</li>
+          </ul>
+        </section>
+        <section class="information">
+          <h2 class="information__heading">Extra-curricular activities:</h2>
+          <ul class="information__list">
+            <li class="information__item">Working</li>
+            <li class="information__item">Broading my knowledge</li>
+            <li class="information__item">Reading</li>
+            <li class="information__item">Netflix</li>
+          </ul>
+        </section>
       </main>
       <aside class="section-aside">
         <ul class="sidebar">
