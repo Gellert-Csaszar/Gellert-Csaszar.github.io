@@ -8,15 +8,43 @@
     <title>Blog</title>
   </head>
   <body>
+    <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+    <label for="hamburger-menu" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="overlay"></div>
+    <nav class="nav nav--mobile">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="profile.html" class="nav__link">Profile</a>
+        </li>
+        <li class="nav__item">
+          <a href="dashboard.html" class="nav__link">Dashboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link current-page">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="faq.html" class="nav__link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
     <header class="section-header">
-      <div class="flex align-center justify-between container">
+      <div
+        class="flex align-center justify-between container height-for-header"
+      >
         <a href="https://hz.nl/" class="logo" target="_blank"
           ><img
             src="./images/hz-logo.svg"
             alt="The logo of HZ university"
             class="logo__image"
         /></a>
-        <nav class="nav">
+        <nav class="nav nav--desktop">
           <ul class="nav__list flex align-center">
             <li class="nav__item">
               <a href="index.html" class="nav__link">Home</a>
@@ -37,10 +65,10 @@
         </nav>
       </div>
     </header>
-    <div class="container flex martop-header-height medium-gap">
+    <div class="container flex martop-header-height medium-gap flex-column">
       <main class="section-main">
-        <h1 class="blog-heading">Blogging is in the blood</h1>
-        <div class="post-outer-container">
+        <h1 class="blog-heading">Blogging</h1>
+        <div class="post-outer-container post-outer-container--desktop">
           <!-- Group 1 -->
           <div class="post-group" id="group-1">
             <a href="#group-3" class="arrow arrow--left">&lArr;</a>
@@ -187,10 +215,126 @@
             <a href="#group-3" class="dot"></a>
           </div>
         </div>
+        <!-- MOBILE -->
+        <div class="post-outer-container post-outer-container--mobile">
+          <!-- Group 1 -->
+          <div class="post-group" id="group-1-mobile">
+            <a href="#group-4-mobile" class="arrow arrow--left">&lArr;</a>
+            <figure class="post">
+              <div class="post__image-container">
+                <img
+                  src="/images/coding.jpg"
+                  alt="A picture of HTML markup"
+                  class="post__image"
+                />
+              </div>
+              <div class="post__content">
+                <h3 class="post__heading">Study choice</h3>
+                <figcaption class="post__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                  id maxime earum blanditiis fugit provident officia facere
+                </figcaption>
+              </div>
+              <a href="posts/study-choice-post.html" class="cta-btn martop-auto"
+                >Read more &rarr;</a
+              >
+            </figure>
+
+            <a href="#group-2-mobile" class="arrow arrow--right">&rArr;</a>
+          </div>
+          <!-- Group 2 -->
+          <div class="post-group" id="group-2-mobile">
+            <a href="#group-1-mobile" class="arrow arrow--left">&lArr;</a>
+            <figure class="post">
+              <div class="post__image-container">
+                <img
+                  src="/images/coding.jpg"
+                  alt="A picture of HTML markup"
+                  class="post__image"
+                />
+              </div>
+              <div class="post__content">
+                <h3 class="post__heading">SWOT analysis</h3>
+                <figcaption class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil dolores sequi amet dicta, quam voluptatum.
+                </figcaption>
+              </div>
+              <a
+                href="posts/swot-analysis-post.html"
+                class="cta-btn martop-auto"
+                >Read more &rarr;</a
+              >
+            </figure>
+
+            <a href="#group-3-mobile" class="arrow arrow--right">&rArr;</a>
+          </div>
+          <!-- Group 3 -->
+          <div class="post-group" id="group-3-mobile">
+            <a href="#group-2-mobile" class="arrow arrow--left">&lArr;</a>
+            <figure class="post">
+              <div class="post__image-container">
+                <img
+                  src="/images/coding.jpg"
+                  alt="A picture of HTML markup"
+                  class="post__image"
+                />
+              </div>
+              <div class="post__content">
+                <h3 class="post__heading">Programming experience</h3>
+                <figcaption class="post__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  nemo rerum earum unde aperiam iusto et, ipsa maiores eum ut.
+                </figcaption>
+              </div>
+              <a
+                href="posts/programming-experience-post.html"
+                class="cta-btn martop-auto"
+                >Read more &rarr;</a
+              >
+            </figure>
+
+            <a href="#group-4-mobile" class="arrow arrow--right">&rArr;</a>
+          </div>
+          <!-- Group 4 -->
+          <div class="post-group" id="group-4-mobile">
+            <a href="#group-3-mobile" class="arrow arrow--left">&lArr;</a>
+            <figure class="post">
+              <div class="post__image-container">
+                <img
+                  src="/images/coding.jpg"
+                  alt="A picture of HTML markup"
+                  class="post__image"
+                />
+              </div>
+              <div class="post__content">
+                <h3 class="post__heading">First feedback</h3>
+                <figcaption class="post__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  non porro esse ab reprehenderit quaerat eius rerum sapiente
+                  deserunt veritatis.
+                </figcaption>
+              </div>
+              <a
+                href="posts/first-feedback-post.html"
+                class="cta-btn martop-auto"
+                >Read more &rarr;</a
+              >
+            </figure>
+
+            <a href="#group-1-mobile" class="arrow arrow--right">&rArr;</a>
+          </div>
+          <div class="dot-container">
+            <a href="#group-1-mobile" class="dot"></a>
+            <a href="#group-2-mobile" class="dot"></a>
+            <a href="#group-3-mobile" class="dot"></a>
+            <a href="#group-4-mobile" class="dot"></a>
+          </div>
+        </div>
       </main>
       <aside class="section-aside">
         <ul class="sidebar">
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid"
               target="_blank"
@@ -198,7 +342,7 @@
               >MSTeams</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://github.com/HZ-HBO-ICT"
               target="_blank"
@@ -206,7 +350,7 @@
               >Github HZ</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://learn.hz.nl/my/"
               target="_blank"
@@ -214,7 +358,7 @@
               >Learn HZ</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://hz.osiris-student.nl/#/home"
               target="_blank"
@@ -222,20 +366,20 @@
               >Study Progress</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
               target="_blank"
               class="sidebar__link"
-              >Implementation Regulations</a
+              >Implementation Reg</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
               target="_blank"
               class="sidebar__link"
-              >Examination Regulations</a
+              >Examination Reg</a
             >
           </li>
         </ul>

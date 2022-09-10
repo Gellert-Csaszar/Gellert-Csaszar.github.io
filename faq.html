@@ -8,15 +8,43 @@
     <title>FAQ</title>
   </head>
   <body>
+    <input type="checkbox" id="hamburger-menu" class="hamburger-menu" />
+    <label for="hamburger-menu" class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="overlay"></div>
+    <nav class="nav nav--mobile">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="profile.html" class="nav__link">Profile</a>
+        </li>
+        <li class="nav__item">
+          <a href="dashboard.html" class="nav__link">Dashboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="blog.html" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link current-page">FAQ</a>
+        </li>
+      </ul>
+    </nav>
     <header class="section-header">
-      <div class="flex align-center justify-between container">
+      <div
+        class="flex align-center justify-between container height-for-header"
+      >
         <a href="https://hz.nl/" class="logo" target="_blank"
           ><img
             src="./images/hz-logo.svg"
             alt="The logo of HZ university"
             class="logo__image"
         /></a>
-        <nav class="nav">
+        <nav class="nav nav--desktop">
           <ul class="nav__list flex align-center">
             <li class="nav__item">
               <a href="index.html" class="nav__link">Home</a>
@@ -37,13 +65,13 @@
         </nav>
       </div>
     </header>
-    <div class="container flex martop-header-height medium-gap">
+    <div class="container flex martop-header-height medium-gap flex-column">
       <main class="section-main">
         <div class="faq-container">
           <h1 class="faq-heading">FAQ</h1>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--1"
               name="faq"
@@ -67,14 +95,16 @@
             </label>
             <div class="faq__content">
               <p class="faq__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
+                fuga cumque autem consectetur quam repellendus unde, ab adipisci
+                excepturi sit amet labore inventore eius reprehenderit dolore
+                alias quidem qui doloribus!
               </p>
             </div>
           </figure>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--2"
               name="faq"
@@ -98,14 +128,15 @@
             </label>
             <div class="faq__content">
               <p class="faq__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                magnam at officiis nostrum! Fugiat laudantium a fugit delectus
+                nemo enim.
               </p>
             </div>
           </figure>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--3"
               name="faq"
@@ -130,13 +161,15 @@
             <div class="faq__content">
               <p class="faq__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Praesentium, qui totam perspiciatis reiciendis asperiores
+                placeat cupiditate ipsam perferendis officiis libero nobis sint
+                sunt sed minima.
               </p>
             </div>
           </figure>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--4"
               name="faq"
@@ -160,14 +193,14 @@
             </label>
             <div class="faq__content">
               <p class="faq__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+                nesciunt quas amet. Velit impedit laborum qui nihil.
               </p>
             </div>
           </figure>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--5"
               name="faq"
@@ -192,20 +225,20 @@
             <div class="faq__content">
               <p class="faq__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Similique, dicta, minus autem, eligendi excepturi quod quisquam
+                obcaecati doloremque laboriosam qui quo fugit hic!
               </p>
             </div>
           </figure>
           <figure class="faq">
             <input
-              type="radio"
+              type="checkbox"
               class="faq__toggle"
               id="faq__toggle--6"
               name="faq"
             />
             <label class="faq__question" for="faq__toggle--6">
-              What are the instructions if you want to park your car at the HZ
-              parking lot?
+              What are the instructions on parking at HZ?
               <svg
                 width="12"
                 height="8"
@@ -223,8 +256,10 @@
             </label>
             <div class="faq__content">
               <p class="faq__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus cumque incidunt dicta quam soluta aspernatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                ratione a quae dolorum? Perspiciatis expedita minima obcaecati
+                ea, corrupti aliquid, adipisci repudiandae beatae natus illo
+                dolorum aspernatur? Magni.
               </p>
             </div>
           </figure>
@@ -232,7 +267,7 @@
       </main>
       <aside class="section-aside">
         <ul class="sidebar">
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid"
               target="_blank"
@@ -240,7 +275,7 @@
               >MSTeams</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://github.com/HZ-HBO-ICT"
               target="_blank"
@@ -248,7 +283,7 @@
               >Github HZ</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://learn.hz.nl/my/"
               target="_blank"
@@ -256,7 +291,7 @@
               >Learn HZ</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://hz.osiris-student.nl/#/home"
               target="_blank"
@@ -264,24 +299,36 @@
               >Study Progress</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
               target="_blank"
               class="sidebar__link"
-              >Implementation Regulations</a
+              >Implementation Reg</a
             >
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
               target="_blank"
               class="sidebar__link"
-              >Examination Regulations</a
+              >Examination Reg</a
             >
           </li>
         </ul>
       </aside>
     </div>
+    <!-- <footer class="section-footer">
+      <div class="container">
+        <div>
+          <h3 class="footer__heading">Contact me:</h3>
+          <ul>
+            <li>Email: <span>test@test.com</span></li>
+            <li>Telephone: <span>+123456789</span></li>
+            <li>Location: <span>4123 Vlissingen, Test Street 12</span></li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
   </body>
 </html>
