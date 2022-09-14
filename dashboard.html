@@ -65,64 +65,274 @@
         </nav>
       </div>
     </header>
-    <div
-      class="container flex martop-header-height medium-gap flex-column main-content-padding-top"
-    >
-      <main class="section-main">
-        <h1>Dashboard</h1>
-      </main>
-      <aside class="section-aside">
-        <ul class="sidebar">
-          <li class="sidebar__item">
-            <a
-              href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid"
-              target="_blank"
-              class="sidebar__link"
-              >MSTeams</a
+    <div class="main-content-padding-block padding-at-the-sides">
+      <div class="flex gap flex-column container">
+        <main class="section-main">
+          <!-- <table class="table">
+            <thead>
+              <tr class="dashboard__row">
+                <th class="dashboard__column">Quartile</th>
+                <th class="dashboard__column">Course</th>
+                <th class="dashboard__column">EC</th>
+                <th class="dashboard__column">Exam</th>
+                <th class="dashboard__column">Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dashboard__row">
+                <td class="dashboard__column" rowspan="3">1</td>
+                <td class="dashboard__column">Program & Career Orintation</td>
+                <td class="dashboard__column">2.5</td>
+                <td class="dashboard__column">Assessment</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Computer Science Basics</td>
+                <td class="dashboard__column">5</td>
+                <td class="dashboard__column">Written Exam</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Programming Basics</td>
+                <td class="dashboard__column">5</td>
+                <td class="dashboard__column">Case Study</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column" rowspan="2">2</td>
+                <td class="dashboard__column" rowspan="2">
+                  Object Oriented Programming
+                </td>
+                <td class="dashboard__column" rowspan="2">10</td>
+                <td class="dashboard__column">Case Study(50%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Project(50%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column" rowspan="4">3</td>
+                <td class="dashboard__column">Framework Development 1</td>
+                <td class="dashboard__column">5</td>
+                <td class="dashboard__column">Case Study</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column" rowspan="3">
+                  Framework Project 1
+                </td>
+                <td class="dashboard__column" rowspan="3">7.5</td>
+                <td class="dashboard__column">Project(33%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Case Study Exam(33%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Report(33%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column" rowspan="3">4</td>
+                <td class="dashboard__column" rowspan="3">
+                  Framework Project 2
+                </td>
+                <td class="dashboard__column" rowspan="3">10</td>
+                <td class="dashboard__column">Portfolio(50%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Project(25%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+              <tr class="dashboard__row">
+                <td class="dashboard__column">Assessment(25%)</td>
+                <td class="dashboard__column">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table> -->
+          <div class="dashboard">
+            <!-- Headings -->
+            <div class="dashboard__heading">Quartile</div>
+            <div class="dashboard__heading">Course</div>
+            <div class="dashboard__heading">EC</div>
+            <div class="dashboard__heading">Exam</div>
+            <div class="dashboard__heading">Grade</div>
+            <!-- Quartiles -->
+            <div class="dashboard__cell" style="grid-row: 2 / 5">1</div>
+            <div class="dashboard__cell" style="grid-row: 5 / 7">2</div>
+            <div class="dashboard__cell" style="grid-row: 7 / 11">3</div>
+            <div class="dashboard__cell" style="grid-row: 11 / 14">4</div>
+            <!-- Course -->
+            <div class="dashboard__cell" style="grid-row: 2; grid-column: 2">
+              Program & Career Orintation
+            </div>
+            <div class="dashboard__cell" style="grid-row: 3; grid-column: 2">
+              Computer Science Basics
+            </div>
+            <div class="dashboard__cell" style="grid-row: 4; grid-column: 2">
+              Programming Basics
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 5 / 7; grid-column: 2"
             >
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://github.com/HZ-HBO-ICT"
-              target="_blank"
-              class="sidebar__link"
-              >Github HZ</a
+              Object Oriented Programming
+            </div>
+            <div class="dashboard__cell" style="grid-row: 7; grid-column: 2">
+              Framework Development 1
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 8 / 11; grid-column: 2"
             >
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://learn.hz.nl/my/"
-              target="_blank"
-              class="sidebar__link"
-              >Learn HZ</a
+              Framework Project 1
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 11 / -1; grid-column: 2"
             >
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://hz.osiris-student.nl/#/home"
-              target="_blank"
-              class="sidebar__link"
-              >Study Progress</a
+              Framework Project 2
+            </div>
+            <!-- EC -->
+            <div class="dashboard__cell" style="grid-row: 2; grid-column: 3">
+              2.5
+            </div>
+            <div class="dashboard__cell" style="grid-row: 3; grid-column: 3">
+              5
+            </div>
+            <div class="dashboard__cell" style="grid-row: 4; grid-column: 3">
+              5
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 5 / 7; grid-column: 3"
             >
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://glaze-donut-5a5.notion.site/Assignment-Specification-661c5ac5d7494328a58be61d00dd41e4"
-              target="_blank"
-              class="sidebar__link"
-              >Implementation Reg</a
+              10
+            </div>
+            <div class="dashboard__cell" style="grid-row: 7; grid-column: 3">
+              5
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 8 / 11; grid-column: 3"
             >
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
-              target="_blank"
-              class="sidebar__link"
-              >Examination Reg</a
+              7.5
+            </div>
+            <div
+              class="dashboard__cell"
+              style="grid-row: 11 / -1; grid-column: 3"
             >
-          </li>
-        </ul>
-      </aside>
+              10
+            </div>
+            <!-- Exam -->
+            <div class="dashboard__cell" style="grid-row: 2; grid-column: 4">
+              Assessment
+            </div>
+            <div class="dashboard__cell" style="grid-row: 3; grid-column: 4">
+              Written Exam
+            </div>
+            <div class="dashboard__cell" style="grid-row: 4; grid-column: 4">
+              Case Study
+            </div>
+            <div class="dashboard__cell" style="grid-row: 5; grid-column: 4">
+              Case Study(50%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 6; grid-column: 4">
+              Project(50%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 7; grid-column: 4">
+              Case Study
+            </div>
+            <div class="dashboard__cell" style="grid-row: 8; grid-column: 4">
+              Project(33%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 9; grid-column: 4">
+              Case Study Exam(33%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 10; grid-column: 4">
+              Report(33%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 11; grid-column: 4">
+              Portfolio(50%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 12; grid-column: 4">
+              Project(25%)
+            </div>
+            <div class="dashboard__cell" style="grid-row: 13; grid-column: 4">
+              Assessment(25%)
+            </div>
+            <!-- Grade -->
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+            <div class="dashboard__cell">&nbsp;</div>
+          </div>
+        </main>
+        <aside class="section-aside">
+          <ul class="sidebar">
+            <li class="sidebar__item">
+              <a
+                href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid"
+                target="_blank"
+                class="sidebar__link"
+                >MSTeams</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://github.com/HZ-HBO-ICT"
+                target="_blank"
+                class="sidebar__link"
+                >Github HZ</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://learn.hz.nl/my/"
+                target="_blank"
+                class="sidebar__link"
+                >Learn HZ</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://hz.osiris-student.nl/#/home"
+                target="_blank"
+                class="sidebar__link"
+                >Study Progress</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+                target="_blank"
+                class="sidebar__link"
+                >Implementation Reg</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                target="_blank"
+                class="sidebar__link"
+                >Examination Reg</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
+    <footer class="section-footer"></footer>
   </body>
 </html>
